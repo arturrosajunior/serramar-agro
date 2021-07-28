@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Akko Pro';
+    src: url('AkkoPro-Bold.woff2') format('woff2'),
+        url('AkkoPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akko Rounded W01';
+    src: url('AkkoRoundedW01-Bold.woff2') format('woff2'),
+        url('AkkoRoundedW01-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akko Rounded W01';
+    src: url('AkkoRoundedW01-Medium.woff2') format('woff2'),
+        url('AkkoRoundedW01-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akko Pro';
+    src: url('AkkoPro-Medium.woff2') format('woff2'),
+        url('AkkoPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akko Pro';
+    src: url('AkkoPro-Regular.woff2') format('woff2'),
+        url('AkkoPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

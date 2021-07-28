@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Serramar Agro</title>
+</head>
+
+<body>
+
+  <style>
+    :root {
+      --colorGreen: #126135;
+      --colorGreen2: #7BC043;
+      --colorGreen3: #058147;
+      --colorGreen4: #80BA27;
+      --colorGrey: #575756;
+
+    }
+
+    @font-face {
+      font-family: 'Akko Pro';
+      src: url('assets/fonts/AkkoPro-Bold.woff2') format('woff2'),
+        url('assets/fonts/AkkoPro-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Akko Rounded W01';
+      src: url('assets/fonts/AkkoRoundedW01-Bold.woff2') format('woff2'),
+        url('assets/fonts/AkkoRoundedW01-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Akko Rounded W01';
+      src: url('assets/fonts/AkkoRoundedW01-Medium.woff2') format('woff2'),
+        url('assets/fonts/AkkoRoundedW01-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Akko Pro';
+      src: url('assets/fonts/AkkoPro-Medium.woff2') format('woff2'),
+        url('assets/fonts/AkkoPro-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Akko Pro';
+      src: url('assets/fonts/AkkoPro-Regular.woff2') format('woff2'),
+        url('assets/fonts/AkkoPro-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body {
+      overflow-x: hidden;
+      color: var(--colorGrey);
+      font-size: 18px;
+      font-weight: 500;
+      font-family: 'Akko Pro';
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul._list-folhas {
+      list-style: none;
+    }
+
+    ul._list-folhas li:before {
+      content: '';
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      background: url(folha.svg) center no-repeat;
+      margin-right: 5px;
+    }
+
+    h1,
+    h2 {
+      font-weight: bold;
+      font-size: 46px;
+      line-height: 55px;
+      color: var(--colorGreen);
+      font-family: 'Akko Rounded W01';
+
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 32px;
+      color: var(--colorGreen);
+
+    }
+
+    ._semente-fertilizantes {
+      background: #F0FFD4;
+    }
+
+    ._bg-green {
+      background: var(--colorGreen2);
+    }
+
+    ._image-campo {
+      transform: scale(1.2);
+    }
+
+    ._lista-encontra-na-loja {
+      margin: 30px 0 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ._lista-encontra-na-loja li {
+      display: inline-block;
+      margin-right: 39px;
+      color: var(--colorGreen);
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 400;
+      margin-bottom: 17px;
+    }
+
+    ._lista-encontra-na-loja li img {
+      max-height: 40px;
+      margin-right: 8px;
+    }
+
+    ._unidade-box {
+      margin-bottom: 25px;
+    }
+
+    ._unidade-box h3 {
+      font-size: 16px;
+      color: var(--colorGreen3);
+      line-height: 18px;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    ._unidade-box p {
+      font-size: 16px;
+      color: #000000;
+      line-height: 18px;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    ._fale-conosco h2 {
+      font-size: 51px;
+      font-weight: bold;
+      color: var(--colorGreen2);
+      line-height: 62px;
+      text-transform: uppercase;
+      letter-spacing: -0.40px;
+      margin: 0;
+    }
+
+    ._fale-conosco p {
+      font-size: 20px;
+      font-weight: 400;
+      color: #575756;
+      letter-spacing: -0.10px;
+    }
+
+    ._whats-app {
+      margin-bottom: 10px;
+    }
+
+    ._whats-app::before {
+      content: '';
+      float: left;
+      width: 42px;
+      height: 45px;
+      background: url(whatsapp.svg)center no-repeat;
+      margin-right: 10px;
+    }
+
+    ._whats-app h3 {
+      color: var(--colorGreen4);
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-family: 'Akko Pro';
+
+    }
+
+    ._whats-app a {
+      font-size: 18px;
+      font-weight: 400;
+      color: #575756;
+      letter-spacing: -0.10px;
+      line-height: 24px;
+      text-decoration: unset;
+    }
+
+    ._celular {
+      background: url(celular.png)top no-repeat;
+      height: 450px;
+      width: 380px;
+      background-size: cover;
+      position: absolute;
+      top: -100px;
+
+    }
+
+    ._instagram,
+    ._facebook {
+      font-size: 18px;
+      font-weight: 400;
+      color: #000;
+      text-decoration: unset;
+      margin-top: 20px;
+      display: block;
+    }
+
+    ._instagram:before {
+      content: '';
+      float: left;
+      background: url(instagram.svg)center no-repeat;
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+      background-size: cover;
+    }
+
+    ._facebook:before {
+      content: '';
+      float: left;
+      background: url(facebook.svg)center no-repeat;
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+      background-size: cover;
+    }
+
+    input.form-control {
+      border: 2px solid var(--colorGreen2);
+    }
+
+    textarea.form-control {
+      height: 150px;
+      border: 2px solid var(--colorGreen2);
+
+    }
+  </style>
+
+  <section class="container-fluid p-0">
+    <img src="banner.jpg" alt="Serramar Agro" class="img-fluid d-block mx-auto w-100" data-aos="fade-down" />
+  </section>
+
+  <section class="container-fluid">
+    <div class="row justify-content-end">
+      <div class="col-md-6" data-aos="fade-right">
+        <div>
+          <h1>SOBRE A SERRAMAR AGRO</h1>
+          <p class="mb-4">
+            A Serramar Agro nasceu para oferecer produtos agropecuários com alta qualidade e variedade. Com parcerias
+            sólidas e equipe qualificada, o atendimento aos cooperados e produtores é sempre completo e diferenciado.
+          </p>
+
+          <ul class="_list-folhas">
+            <li>Equipe formada por engenheiros agrônomos</li>
+            <li>7 pontos de vendas</li>
+            <li>Preparados e qualificados para o melhor atendimento</li>
+            <li>Preparados e qualificados para o melhor atendimento</li>
+            <li>Sementes de alta tecnologia para atender o Vale do Paraíba</li>
+            <li>Atendimento diferenciado no campo para cooperados e produtores</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-left">
+        <div>
+          <label>Nome</label>
+          <input type="text" class="form-control mb-2">
+          <label>Email</label>
+          <input type="text" class="form-control mb-2">
+          <label>Mensagem</label>
+          <textarea name="" id="" cols="30" rows="10" class="form-control mb-3"></textarea>
+          <div class="btn btn-success">Enviar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid p-0 my-5">
+    <div class="_semente-fertilizantes px-0 py-5">
+      <div class="row justify-content-end">
+        <div class="col-md-6" data-aos="fade-right">
+          <div>
+            <h2>SEMENTES E FERTILIZANTES</h2>
+            <p class="text-light _bg-green rounded d-inline p-2">A Serramar Agro conta com sementes, fertilizantes e
+              defensivos
+              agrícolas que garantem o sucesso de toda lavoura.</p>
+            <ul class="my-4">
+              <li>Milho - FORSEED, DEKALB, PIONNER;</li>
+              <li>Sementes de Soja;</li>
+              <li>Sorgo e Pastagens;</li>
+              <li>Fertilizantes e defensivos agrícolas de alta performance.</li>
+            </ul>
+
+            <h2>PARCEIROS</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <p>A Serramar Agro é parceira
+                  de marcas que são sinônimo de
+                  qualidade, variedade e tradição.</p>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <ul>
+                      <li>Corteva</li>
+                      <li>Ouro fino</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul class="m-0 p-0">
+                      <li>Sumitomo</li>
+                      <li>Geoclean</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-left">
+          <div>
+            <img src="image-campo.png" alt="Campo" class="img-fluid _image-campo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container p-4 " data-aos="fade-down">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-11">
+        <h3>Nas Lojas Serramar Agro você encontra:</h3>
+        <ul class="_lista-encontra-na-loja">
+          <li><img src="vacinas.svg" alt="Vacinas">Vacinas</li>
+          <li><img src="nutricao-animal.svg" alt="Nutrição Animal">Nutrição Animal</li>
+          <li><img src="medicamentos.svg" alt="Medicamentos">Medicamentos</li>
+          <li><img src="selria.svg" alt="Selaria">Selaria</li>
+          <li><img src="linha-de-ordenha.svg" alt="Linha de Ordenha">Linha de Ordenha</li>
+          <li><img src="ferramentas.svg" alt="Ferramentas">Ferramentas</li>
+          <li><img src="linha-pet.svg" alt="Linha Pet">Linha Pet</li>
+          <li><img src="jardinagem.svg" alt="Jardinagem">Jardinagem</li>
+          <li><img src="linha-de-piscina.svg" alt="Linha de piscinas">Linha de piscinas</li>
+          <li><img src="moda-country.svg" alt="Moda Country">Moda Country</li>
+          <li><img src="maquinas-agriculas.svg" alt="Máquinas Agrícolas">Máquinas Agrícolas</li>
+          <li><img src="produtos-agropecuaria.svg" alt="Produtos de Agropecuária em Geral">Produtos de Agropecuária em
+            Geral
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="_unidades container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="unidades.png" alt="Unidades" class="img-fluid" data-aos="fade-right">
+      </div>
+      <div class="col-md-4">
+        <div class="_lista-unidades" data-aos="fade-down">
+          <div class="_unidade-box">
+            <h3>• Bananal</h3>
+            <p>Av. Bom Jesus, 503 Centro</p>
+            <p class="_tel">(12) 3116-1371</p>
+          </div>
+
+          <div class="_unidade-box">
+            <h3>• Cruzeiro</h3>
+            <p>Rua Dr. Celestino, 156 - Centro</p>
+            <p class="_tel">(12) 3145-4830</p>
+          </div>
+
+          <div class="_unidade-box">
+            <h3>• Cunha</h3>
+            <p>Al. Francisco da Cunha Menezes, 647 - Falcão</p>
+            <p class="_tel">(12) 3111-1375</p>
+          </div>
+
+          <div class="_unidade-box">
+            <h3>• Guaratinguetá</h3>
+            <p>Av. da Exposição, 45 - Bloco I - Vila Regina</p>
+            <p class="_tel">(12) 3127-8975</p>
+          </div>
+
+          <div class="_unidade-box">
+            <h3>• Rocinha (Guaratinguetá)</h3>
+            <p>Av. Francisco Joaquim Pereira, 101 - Rocinha</p>
+            <p class="_tel">(12) 3127-1113</p>
+          </div>
+
+          <div class="_unidade-box">
+            <h3>• Lagoinha</h3>
+            <p>Rua Maria do Carmo Gouvêa, 155 - Centro</p>
+            <p class="_tel">(12) 3647-1409</p>
+          </div>
+
+          <div class="_unidade-box">
+            <h3>• Lorena</h3>
+            <p>Av. Peixoto de Castro, 1250 - Bairro da Cruz</p>
+            <p class="_tel">(12) 3152-9320</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="_fale-conosco" data-aos="fade-left">
+          <h2>FALE CONOSCO!</h2>
+          <p>Entre em contato com nossa equipe
+            de engenheiros agrônomos:</p>
+
+          <div class="_whats-app">
+            <h3>ANTÔNIO CORTEZ</h3>
+            <a href="https://wa.me/12997270341" target="_blank">(12) 99727-0341</a>
+          </div>
+          <div class="_whats-app">
+            <h3>MARCELA SOUZA</h3>
+            <a href="https://wa.me/121996001011" target="_blank">(12) 99600-1011</a>
+          </div>
+          <div class="_whats-app">
+            <h3>NEY AGNALDO PAIXÃO LEITE</h3>
+            <a href="https://wa.me/121996001011" target="_blank">(12) 99701-8090</a>
+          </div>
+          <div class="_whats-app">
+            <h3>VINICIUS ALVES MOREIRA</h3>
+            <a href="https://wa.me/12997402855" target="_blank">(12) 99740-2855</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="_redes-sociais">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <img src="quadro-redes-sociais.jpg" alt="Redes Sociais" class="img-fluid">
+          <div class="row">
+            <div class="col-md-6 ps-4 ">
+              <a class="_instagram" href="https://www.instagram.com/serramaragro/">@serramaragro</a>
+            </div>
+            <div class="col-md-6 ">
+              <a class="_facebook" href="https://www.facebook.com/serramaragro">/serramaragro</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-5 position-relative">
+          <div class="_celular"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

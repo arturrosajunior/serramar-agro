@@ -1,0 +1,78 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: landing page_V2_programador.ai
+Color Mode: RGB color
+Color Profile: sRGB IEC61966-2.1
+Ruler Units: pixels
+Artboard Dimensions: 1240 px x 2503 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Akko Pro Medium (OTF)
+Akko Pro Regular (OTF)
+AkkoRoundedW01-Medium (OTF)
+Akko Pro Bold (OTF)
+AkkoRoundedW01-Bold (OTF)
+Ford Antenna Semibold (OTF)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+U:\CRIACAO\SERRAMAR AGRO\_2020\0007 - 20 - Apresentação AGRO\Links\shutterstock_140658412_AJ.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 37264K, 4368 by 2912 pixels
+Dimensions: 836,321 by 557,547 points 
+Resolution: 376,047 by 376,047 pixels per inch
+
+
+U:\CRIACAO\SERRAMAR AGRO\0014 - 21 - Site\links\redes sociais.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 1005K, 764 by 337 pixels
+Dimensions: 407,771 by 190,826 points 
+Resolution: 134,899 by 127,152 pixels per inch
+
+
+U:\CRIACAO\SERRAMAR AGRO\0014 - 21 - Site\links\banner topo.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 5859K, 2000 by 1000 pixels
+Dimensions: 1237 by 618,5 points 
+Resolution: 116,411 by 116,411 pixels per inch
+
+
+U:\CRIACAO\SERRAMAR AGRO\0014 - 21 - Site\links\celular instagram serramar agro.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 59036K, 4529 by 3337 pixels
+Dimensions: 885,803 by 704,875 points 
+Resolution: 368,127 by 340,86 pixels per inch
